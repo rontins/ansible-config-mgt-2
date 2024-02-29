@@ -1,6 +1,6 @@
 ---
-- name: update web, nfs servers
-  hosts: webservers, nfs,
+- name: update web, nfs, Nexus and Sonarqube servers
+  hosts: webservers, nfs, Nexus, Sonarqube-Server
   remote_user: ec2-user
   become: yes
   become_user: root
